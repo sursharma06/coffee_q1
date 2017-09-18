@@ -1,0 +1,22 @@
+body {
+  background-color: #fbe9e7;
+}
+
+.first {
+  background-color: #bf360c;
+}
+
+.page-footer {
+  background-color: #bf360c;
+}
+
+#container {
+  width: 95%;
+  margin: 0 auto;
+  padding: 15px 10px;
+}
+
+a {
+  font-family: cursive;
+  font-size: 25px;
+}

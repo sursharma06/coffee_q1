@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Coffix</title>
+
+    <link rel="stylesheet" href="coffee.css">
+  </head>
+  <body>
+    <div id="container">
+      <nav class="mainNav">
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      <h1>Coffix</h1>
+      <h2>Welcome Coffee Lovers</h2>
+
+    <div id="mapGoesHere">
+
+    </div>
+    <footer>
+      <p class="copy">&copy; Copyright 2017, Surbhi Sharma</p>
+      <div class="clear"></div>
+      <nav class="footernav">
+        <ul>
+          <li><a href="#">But first, Coffee!</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      <div class="clear"></div>
+      <p class="terms"><a href="#">Terms of Use</a></p>
+
+    </footer>
+    </div>
+    <script>
+var map;
+var infowindow;
+
+function initMap() {
+  var lat;
+  var lng;
+
+  navigator.geolocation.getCurrentPosition(function (position) {
+      lat = position.coords.latitude;
+      lng = position.coords.longitude;
+
+      //console.log(lat, lng);
+
+      var newYork = { lat: lat, lng: lng };
+
+      map = new google.maps.Map(document.getElementById('mapGoesHere'), {
+        center: newYork,
+        zoom: 13,
+        disableDefaultUI: true,
+        scrollwheel: true,
+        draggable: true,
+      });
+
+      infowindow = new google.maps.InfoWindow();
+
+      var service = new google.maps.places.PlacesService(map);
+
+      service.nearbySearch({
+              location: newYork,
+              radius: 6000,
+              type: ['cafe'],
+            }, callback);
+    }
+);
+  function callback(results, status) {
+    if (status === google.maps.places.PlacesServiceStatus.OK) {
+      for (var i = 0; i < results.length; i++) {
+        createMarker(results[i]);
+        console.log(results);
+      }
+    }
+  }
+
+  function createMarker(place) {
+    var placeLoc = place.geometry.location;
+    var marker = new google.maps.Marker({
+        map: map,
+        position: place.geometry.location,
+      });
+
+    google.maps.event.addListener(marker, 'click', function () {
+              infowindow.setContent(place.name + '<br>' + 'Address: ' + place.vicinity + '<br>' + 'User Rating: ' + place.rating + '<br>' + '<img>' +  place.image + '</img>');
+              infowindow.open(map, this);
+            }
+          );
+  }
+
+}
+
+
+    </script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXrO_2REBrv7MjPPSuWblW6RqbaYidjKM&libraries=places&callback=initMap" async defer></script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+/* Mini CSS Reset */
+article, html, body, form, section, p, div, label {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: normal;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+  text-align: center;
+  text-shadow: 2px 2px 3px #999;
+  color: #e65100;
+}
+
+h2 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 22px;
+  color: #e65100;
+  text-shadow: 2px 2px 3px #999;
+  text-align: center;
+}
+
+#container {
+  width: 95%;
+  background: #ffd180;
+  margin: 0 auto;
+  padding: 15px 10px;
+}
+
+.mainNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffd180;
+}
+
+.mainNav li {
+  float: left;
+}
+
+.mainNav li a {
+  display: block;
+  color: #e65100;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.mainNav a:hover:not(.active){
+  background-color: #e65100;
+  color: #FFF; 
+}
+
+.mainNav .active {
+  background-color: #fff3e0;
+}
+
+.footernav {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.footernav ul {
+  list-style-type: none;
+  float: left;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 50%;
+  text-align: center;
+}
+
+.footernav ul li {
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  right: 50%;
+}
+
+.footernav ul li a {
+  display: block;
+  color: black;
+  margin: 0 0 0 1px;
+  padding: 3px 30px;
+  text-decoration: none;
+}
+
+.footernav ul li a:hover {
+  background: #e65100;
+  border-radius: 5px;
+  color: #FFF;
+}
+
+.terms {
+  line-height: 50px;
+  text-align: center;
+}
+
+.terms a {
+  color: #999;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  color: #069;
+}
+
+.copy {
+  font-size: 12px;
+  padding-left: 15px;
+  float: right;
+}
+
+
+
+#mapGoesHere {
+  height: 100vh;
+
+}
