@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Coffee News</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="coffeenews2.css">
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Navbar goes here -->
+
+    <nav class="first">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">So Extra</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">News</a></li>
+        <li><a href="badges.html">Entertainment</a></li>
+        <li><a href="collapsible.html">About</a></li>
+        </li>
+      </ul>
+        <ul class="side-nav" id="mobile-demo">
+              <li><a href="#">News</a></li>
+              <li><a href="#">Entertainment</a></li>
+              <li><a href="#">About</a></li>
+        </ul>
+    </div>
+  </nav>
+
+    <!-- Page Layout here -->
+    <div class="row">
+
+      <div class="col s12 m4 l3"> <!-- Note that "m4 l3" was added -->
+        <!-- Grey navigation panel
+
+              This content will be:
+          3-columns-wide on large screens,
+          4-columns-wide on medium screens,
+          12-columns-wide on small screens  -->
+    <ul class="collapsible" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header sign">Horoscopes</div>
+      </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Aries</div>
+      <div class="collapsible-body"><span>As the first sign of the zodiac, the presence of an Aries
+        almost always indicates the beginning of something energetic and boisterous. Not much holds
+        this sign back. They're eager, dynamic, quick, and competitive. When it comes to getting the
+        ball rolling, an Aries is the best. Pioneering everything from work-related projects to parties
+        with friends, these folks go for the gusto.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Taurus</div>
+      <div class="collapsible-body"><span>Strong, dependable Taurus leads the way when it comes to reaping
+        the rewards of hard work. Lovers of everything that is fine and beautiful, Taureans surround themselves
+        with material gains. This is a sensual, tactile sign. Touch is very important in everything from work to
+        romance. Stable and conservative, Taureans are among the most reliable of the zodiac. While sometimes
+        viewed as stubborn, this sign will plod along on a task until the very end, ensuring that everything is up
+        to standard.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Gemini</div>
+      <div class="collapsible-body"><span>Versatility is a great keyword for this dual sign. Expressive and quick-witted,
+        the Gemini presents two distinctive sides to his or her personality, and you can never be sure with which one you're
+        going to come face-to-face. On one hand, the Gemini can be outgoing, flirtatious, communicative, and ready for fun, fun,
+        fun. Yet when the other twin is present, you can find this air sign contemplative, serious, restless, and even indecisive.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Cancer</div>
+      <div class="collapsible-body"><span>Deeply intuitive and sentimental, Cancer can be one of the most challenging Zodiac signs to get to know.
+        Emotion runs strong for this sign, and when it comes to family and home, nothing is more important. Sympathetic and empathetic, Cancerians
+        are greatly attuned to those around them. Devotion is the keyword for this sign, making them wonderfully sensitive people to be around.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Leo</div>
+      <div class="collapsible-body"><span>When the mighty Lion enters center stage, everyone notices. This dramatic, creative, and outgoing sign has
+        the keyword magnetism for good reason. Fiery and self-assured, a Leo's charm can be almost impossible to resist. Whether it's time spent with
+        family and friends or efforts on the job scene, a Leo is going to bring a lot to the table.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Virgo</div>
+      <div class="collapsible-body"><span>With an acute attention to detail, the Virgo is the sign in the zodiac most dedicated to serving. Their deep sense
+        of the humane leads them to caregiving like no other, while their methodical approach to life ensures that nothing is missed. The Virgo is often gentle
+        and delicate, preferring to step back and analyze before moving ahead.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Libra</div>
+      <div class="collapsible-body"><span>"I balance" is the key phrase for this sign, and when it comes to keeping everything on an even keel, a Libran will lead the pack.
+        Peace loving and judicial, this sign abhors being alone. Partnerships are very important for the Libran, especially those on a personal level. With their winning
+        personalities and cooperative style, they aren't apt to be alone for long!</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Scorpio</div>
+      <div class="collapsible-body"><span>Beneath a controlled, cool exterior beats the heart of the deeply intense Scorpio. Passionate, penetrating, and determined, this sign
+        will probe until they reach the truth. The Scorpio may not speak volumes or show emotions readily, yet rest assured there's an enormous amount of activity happening beneath
+        the surface. Excellent leaders, Scorpions are always aware. When it comes to resourcefulness, this sign comes out ahead.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Sagittarius</div>
+      <div class="collapsible-body"><span>Inquisitive and energetic, the Sagittarius is the traveler of the Zodiac. Their philosophical, broad-minded approach to life motivates them to
+        wander far and wide in the search for the meaning of life. Extroverted, optimistic, and enthusiastic, it can be almost impossible to keep the Sagittarius down. They love change.
+        In fact, change is essential for this sign to feel their best.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Capricorn</div>
+      <div class="collapsible-body"><span>When it comes to professionalism and traditional values, Capricorn wins hands-down. This practical sign loves to tackle life in the most conventional
+        of ways, leaving no stone unturned. Considered the most serious-minded of the signs, the Capricorn possesses an independence that allows for considerable progress both personally and on
+        the job.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Aquarius</div>
+      <div class="collapsible-body"><span>Aquarians present themselves in one of two ways. One on hand, you'll see someone who is shy, and quiet. On the other, an Aquarian can be boisterous,
+        eccentric, and energetic. Both are deep thinkers with a love of helping others. Highly intellectual, this is a sign of fierce independence that prizes intuition tempered with logic. Both
+        personality types have an uncanny ability to see both sides of an argument without prejudice, making them excellent problem-solvers.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Pisces</div>
+      <div class="collapsible-body"><span>"Understanding" is a most appropriate keyword for this gentle, affectionate sign. Easygoing and generally accepting of others around them, Pisceans are
+        often found in the company of a variety of different personalities. Their willingness to give of themselves emotionally lends to an aura of quiet empathy. A Pisces is comforting to be around.
+        While not likely to be the leader, this sign's presence is strong and vibrant in any cause they put their hearts into.</span></div>
+    </li>
+  </ul>
+
+      </div>
+
+      <div class="col s12 m8 l9" id="last"> <!-- Note that "m8 l9" was added -->
+        <!-- Teal page content
+
+              This content will be:
+          9-columns-wide on large screens,
+          8-columns-wide on medium screens,
+          12-columns-wide on small screens  -->
+
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="coffeenews2.js"></script>
+  </body>
+</html>

@@ -10,14 +10,14 @@
     <div id="container">
       <nav class="mainNav">
         <ul>
-          <li><a class="active" href="#">Home</a></li>
+          <li><a class="active" href="#">Coffix</a></li>
           <li><a href="#">News</a></li>
           <li><a href="#">Contact</a></li>
           <li><a href="#">About</a></li>
         </ul>
       </nav>
-      <h1>Coffix</h1>
-      <h2>Welcome Coffee Lovers</h2>
+      <h1>Coffee Run</h1>
+
 
     <div id="mapGoesHere">
 
@@ -27,7 +27,7 @@
       <div class="clear"></div>
       <nav class="footernav">
         <ul>
-          <li><a href="#">But first, Coffee!</a></li>
+          <li><a href="#">Coffix</a></li>
           <li><a href="#">News</a></li>
           <li><a href="#">Contact</a></li>
           <li><a href="#">About</a></li>
@@ -90,7 +90,7 @@ function initMap() {
       });
 
     google.maps.event.addListener(marker, 'click', function () {
-              infowindow.setContent(place.name + '<br>' + 'Address: ' + place.vicinity + '<br>' + 'User Rating: ' + place.rating + '<br>' + '<img>' +  place.image + '</img>');
+              infowindow.setContent(place.name + '<br>' + 'Address: ' + place.vicinity + '<br>' + 'User Rating: ' + place.rating);
               infowindow.open(map, this);
             }
           );

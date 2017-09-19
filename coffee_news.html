@@ -19,6 +19,20 @@
   <body>
     <div id="container">
     <header>
+      <ul id='dropdown1' class='dropdown-content'>
+        <li><a class="sign" href="#!">Aries</a></li>
+        <li><a href="#!">Taurus</a></li>
+        <li><a href="#!">Gemini</a></li>
+        <li><a href="#!">Cancer</a></li>
+        <li><a href="#!">Leo</a></li>
+        <li><a href="#!">Virgo</a></li>
+        <li><a href="#!">Libra</a></li>
+        <li><a href="#!">Scorpio</a></li>
+        <li><a href="#!">Sagittarius</a></li>
+        <li><a href="#!">Capricorn</a></li>
+        <li><a href="#!">Aquarius</a></li>
+        <li><a href="#!">Pisces</a></li>
+      </ul>
         <nav class="first">
           <div class="nav-wrapper">
             <a href="#" class="brand-logo center">Top News Stories</a>
@@ -27,20 +41,18 @@
               <li><a href="#">News</a></li>
               <li><a href="#">Entertainment</a></li>
               <li><a href="#">Politics</a></li>
-              <li><a href="#">Horoscope</a></li>
+              <li><a class='dropdown-button btn' href='#' data-activates='dropdown1'>Horoscope</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
               <li><a href="#">News</a></li>
               <li><a href="#">Entertainment</a></li>
               <li><a href="#">Politics</a></li>
-              <li><a class='dropdown-button btn' href='#' data-activates='dropdown1'>Horoscope</a></li>
-
             </ul>
           </div>
         </nav>
     </header>
 
-      <select id="sign">
+      <!-- <select id="sign">
         <option value="aries">Aries</option>
         <option value="tauras">Taurus</option>
         <option value="gemini">Gemini</option>
@@ -54,8 +66,8 @@
         <option value="aquarius" selected>Aquarius</option>
         <option value="pisces">Pisces</option>
       </select>
-      <p id="demo"></p>
-  </main>
+      <p id="demo"></p> -->
+
 
     <div class="row">
       <div class="col s7 push-s5" id="newsweek">
@@ -65,7 +77,7 @@
 
 
     <div class="row">
-      <div class="col s7 push-s5" id="">
+      <div class="col s7 push-s5" id="sign">
 
       </div>
     </div>

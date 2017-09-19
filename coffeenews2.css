@@ -1,0 +1,28 @@
+.first {
+  background-color: #bf360c;
+}
+
+.sign {
+  background-color: #bf360c;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+body {
+  background-color: #EBEBD3;
+  width: 95%;
+  padding: 15px 10px;
+  margin: 0 auto;
+}
+
+.carousel {
+  padding-top: 40px;
+}
+
+#last {
+  width: 50%;
+  padding: 15px 10px;
+  margin: 0 auto;
+}

@@ -26,7 +26,8 @@ $.get('https://newsapi.org/v1/articles?source=buzzfeed&sortBy=top&apiKey=d3c7138
   }
 });
 
-var horoscope = document.getElementById('sign').value;
+var horoscope = document.getElementsByClassName('sign').innerHTML;
+
 $.ajax({
     type: 'POST',
     url: 'https://aztro.herokuapp.com?sign=' + horoscope + '&day=today',
@@ -37,4 +38,5 @@ $.ajax({
 
 $(document).ready(function () {
   $('.button-collapse').sideNav();
+  $('.dropdown-button').dropdown();
 });
