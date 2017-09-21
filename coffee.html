@@ -71,13 +71,13 @@ function initMap() {
               radius: 6000,
               type: ['cafe'],
             }, callback);
-    }
-);
+    });
+
   function callback(results, status) {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
       for (var i = 0; i < results.length; i++) {
         createMarker(results[i]);
-        console.log(results);
+        //console.log(results);
       }
     }
   }

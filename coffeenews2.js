@@ -6,13 +6,17 @@ $(document).ready(function () {
 $.get('https://newsapi.org/v1/articles?source=techcrunch&sortBy=top&apiKey=d3c7138c3b3b4fbfa75ea4c537b2a552', function (data) {
   console.log(data.articles);
   for (var i = 0; i < data.articles.length; i++) {
-    var image = document.createElement('img');
+    var image = document.querySelector('img');
     var anchor = document.createElement('a');
+    var para = document.createElement('p');
+    image.setAttribute('class', 'activator');
     image.setAttribute('src', data.articles[i].urlToImage);
     anchor.setAttribute('href', data.articles[i].url);
     anchor.innerHTML = data.articles[i].title;
-    document.getElementById('last').appendChild(image);
-    document.getElementById('last').appendChild(anchor);
+    para.innerHTML = data.articles[i].description;
+    document.getElementsByClassName('img.activator').appendChild(image);
+    // document.getElementById('last').appendChild(anchor);
+    document.getElementsByClassName('card-content').appendChild(para);
   }
 });
 

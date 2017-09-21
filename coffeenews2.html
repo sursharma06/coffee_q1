@@ -13,15 +13,19 @@
   </head>
   <body>
     <!-- Navbar goes here -->
-
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">Shopping</a></li>
+      <li><a href="#!">TechCrunch</a></li>
+      <li><a href="#!">Travel</a></li>
+    </ul>
     <nav class="first">
     <div class="nav-wrapper">
       <a href="#" class="brand-logo">Top Stories</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="sass.html">News</a></li>
-        <li><a href="badges.html">Entertainment</a></li>
-        <li><a href="collapsible.html">About</a></li>
+        <li><a href="badges.html">About</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Entertainment</a></li>
         </li>
       </ul>
         <ul class="side-nav" id="mobile-demo">
@@ -128,17 +132,44 @@
 
       </div>
 
-      <div class="col s12 m8 l9" id="last"> <!-- Note that "m8 l9" was added -->
-        <!-- Teal page content
-
-              This content will be:
-          9-columns-wide on large screens,
-          8-columns-wide on medium screens,
-          12-columns-wide on small screens  -->
 
 
-
+        <div class="col s4">
+    <h2 class="header">Horizontal Card</h2>
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="https://lorempixel.com/100/190/nature/6">
       </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+          <div class="col s4 ">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://lorempixel.com/100/190/nature/6">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
 
     </div>
 
